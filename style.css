@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&family=Emilys+Candy&family=Pacifico&display=swap');
+
+:root {
+    --fonte-titulo: "Pacifico", cursive;
+    --fonte-texto: "Delius Swash Caps", cursive;
+    --fonte-final: "Emilys Candy", serif;
+    --cor-texto-titulo: #f3c6b9;
+    --cor-texto: #f7a29e;
+    --cor-texto-final: #f7a29e;
+    --cor-header: #3b3f49;
+    --cor-main: #fdfaeb;
+    --cor-footer: #faeddf;
+    --cor-botao: #f3c6b9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    height: 10vh;
+    background-color: var(--cor-header);
+    justify-content: center;
+    align-items: center;
+}
+
+.header__titulo {
+    font-size: 35px;
+    font-family: var(--fonte-titulo);
+    color: var(--cor-texto-titulo);
+}
+
+.main {
+    background-color: var(--cor-main);
+    height: 84vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main__caixa__texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.main__texto {
+    color: var(--cor-texto);
+    font-size: 40px;
+    margin: center;
+    text-align: center;
+    padding: 15px;
+    font-family: var(--fonte-texto);
+}
+
+.main__botoes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    margin: 5px;
+}
+
+.botao {
+    margin: 0 10px;
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: var(--cor-botao);
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.botao__desabilitado {
+    margin: 0 10px;
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: grey;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.texto__porcento {
+    margin: 15px;
+    justify-content: center;
+    text-align: center;
+}
+
+.porcentagem {
+    font-size: 30px;
+    font-family: var(--fonte-texto);
+    text-align: center;
+    color: var(--cor-texto);
+}
+
+.imagem {
+    width: 350px;
+    padding: 15px;
+    border-radius: 100px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+#solamente {
+    display: none;
+    justify-content: center;
+    text-align: center;
+}
+
+.ultimaPergunta {
+    color: var(--cor-texto);
+    padding: 15px;
+    font-size: 20px;
+}
+
+.div__final{
+    text-align: center;
+    position: absolute;
+    margin: 320px 810px;
+    background-color: white;
+    opacity: 50%;
+    width: 300px;
+    height: 305px;
+}
+
+.div__final__triste{
+    text-align: center;
+    position: absolute;
+    margin: 320px 810px;
+    background-color: white;
+    opacity: 50%;
+    width: 300px;
+    height: 392px;
+}
+
+.div__texto {
+    text-align: center;
+    position: absolute;
+    margin: 320px 810px;
+    opacity: 100%;
+    width: 300px;
+    height: 305px;
+}
+
+.imagem-esquerda, .imagem-direita, .imagem-sem-amor {
+    width: 100%; /* Cada div ocupará metade da largura */
+    height: 82vh; /* Ajuste a altura conforme necessário */
+    background-size: cover; /* Ajusta a imagem para cobrir toda a área */
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+}
+  
+.imagem-esquerda {
+    background-image: url('assets/monkey-kiss-george-monkey.gif');
+}
+  
+.imagem-direita {
+    background-image: url('assets/monkey-cute-monkey.gif');
+}
+
+.imagem-sem-amor{
+    background-image: url('assets/vegeta-under-the-rain.gif');
+}
+
+.main__final {
+    display: flex;
+
+}
+
+.texto__final {
+    opacity: 100%;
+    margin: 6px;
+    font-family: var(--fonte-final);
+    color: var(--cor-texto-final);
+}
+
+.texto__final__triste{
+    opacity: 100%;
+    margin: 6px;
+    font-family: var(--fonte-final);
+    color: gray;
+}
+
+.imagem-fofa{
+    width: 300px;
+    opacity: 50%;
+}
+
+.imagem-triste{
+    width: 300px;
+    opacity: 70%;
+}
+
+.footer {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 8vh;
+    background-color: var(--cor-footer);
+}
+
+.footer__paragrafo {
+    color: var(--cor-texto-titulo);
+}
+
+.footer__triste {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 8vh;
+    background-color: gray;
+}
+
+.footer__paragrafo__triste {
+    color: black;
+}

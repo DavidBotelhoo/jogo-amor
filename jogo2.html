@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__titulo">Jogo do amor</h1>
+    </header>
+    <main class="main">
+        <div class="main__caixa__texto">
+            <h1 class="main__texto">Quantos porcento você ama ele?</h1>
+            <img class="imagem" src="assets/Perfil.jpeg" alt="Foto do David">
+        </div>
+        <div class="main__botoes">
+            <button onclick="botaoMenos()" class="botao">-</button>
+            <div class="texto__porcento">
+                <span class="porcentagem" id="porcento">0%</span>
+            </div>
+            <button onclick="botaoMais()" id="botaoMais" class="botao">+</button>
+        </div>
+        <div class="solo" id="solamente">
+            <div class="ultimaPergunta">
+                <h2 class="ultimo__texto">Só isso? ;-;</h2>
+            </div>
+            <div class="main__botoes">
+                <a class="botao" href="poucoAmor.html">Sim ;-;</a>
+                <a class="botao" href="paginaFinal.html">Não S2</a>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p class="footer__paragrafo">Feito pelo Amor da sua vida <img src="assets/heart-solid.svg" alt="Coração" width="15px"></p>
+    </footer>
+
+    <script src="app.js" defer></script>
+</body>
+</html>
